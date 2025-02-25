@@ -4,14 +4,16 @@ public class Users {
 	
 	private String name;
 	private int age;
+	private String email;
 	private String id;
 	private String password;
 	
 	public Users() {}
 	
-	public Users(String name, int age, String id, String password) {
+	public Users(String name, int age, String email, String id, String password) {
 		this.name = name;
 		this.age = age;
+		this.email = email;
 		this.id = id;
 		this.password = password;
 	}
@@ -30,6 +32,14 @@ public class Users {
 	
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String getId() {
